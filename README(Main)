@@ -1,0 +1,18 @@
+Purpose of this program:
+
+The patient wants to either book an appointment or verify the appointment is booked so they open the chatbot:
+- The chatbot asks if there is an appointment already booked, if the user replies with any positive answer from the array or API
+  the appointment is verified by either actually saving appointment dates or checking if date is valid.
+
+
+- If the user responds with any negative answer that matches any string in the array, the chabot offers to book an appointment ( we can actually save info and record them into an csv or just display info after it's done.
+
+The added feature to this build is utilizing two Google APIs, the first one confirms the location typed in by the user and then find a doctor medical clinic near that area in a specified radius (default 50 km), the second API actually calculates the distance between the location of the user and then displays the distance between the two locations. 
+
+
+- Every stage of the conversation is a level:
+Level 0: Registration
+Level 1: Verify if meeting is booked
+Level 2: Verify date
+
+Level 3 - 12 : Getting details from the user and ranking them in the correct queue.
